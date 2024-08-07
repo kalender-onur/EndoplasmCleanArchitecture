@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7A01F7AF-8B7C-4869-B540-248C5C22A58E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{6B5B1CCA-895F-43BD-963B-9B4FDE0017D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2EDAB6D7-438A-48BC-983E-96C699F7D74A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8BE63C7E-D9B5-4DFC-B808-97A64962E594}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{ED8EF0CD-FD49-4B7C-B230-5DA3BAE68BDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{FCE5F2CE-C1E0-4105-9DDC-B52F39F99E65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{758062D3-58E9-4181-8593-9F2429539359}"
+	ProjectSection(SolutionItems) = preProject
+		template.json = template.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presistence", "Presistence", "{B0053610-3688-4A42-883B-BF9ACE7FEEF2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndoplasmCleanArchitecture.Presistence", "EndoplasmCleanArchitecture.Presistence\EndoplasmCleanArchitecture.Presistence.csproj", "{C6B023B3-CF46-42A4-ADE9-BA0CC7853892}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndoplasmCleanArchitecture.Authentication", "EndoplasmCleanArchitecture.Authentication\EndoplasmCleanArchitecture.Authentication.csproj", "{ED09FBC5-3BD5-4A59-8D02-0E218A3FBF25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndoplasmCleanArchitecture.Domain", "EndoplasmCleanArchitecture.Domain\EndoplasmCleanArchitecture.Domain.csproj", "{7E666C15-000E-42BC-8E21-003B8BEAE098}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndoplasmCleanArchitecture.Application", "EndoplasmCleanArchitecture.Application\EndoplasmCleanArchitecture.Application.csproj", "{A163ED12-1465-41CF-836C-EF8061A47376}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndoplasmCleanArchitecture.Api", "EndoplasmCleanArchitecture.Api\EndoplasmCleanArchitecture.Api.csproj", "{9BB8D887-B107-4540-94E5-2D4057A34B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndoplasmCleanArchitecture.UnitTests", "EndoplasmCleanArchitecture.UnitTests\EndoplasmCleanArchitecture.UnitTests.csproj", "{ACBD5579-A7C4-4A07-9E20-4C1945F6F28A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6B023B3-CF46-42A4-ADE9-BA0CC7853892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B023B3-CF46-42A4-ADE9-BA0CC7853892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B023B3-CF46-42A4-ADE9-BA0CC7853892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B023B3-CF46-42A4-ADE9-BA0CC7853892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED09FBC5-3BD5-4A59-8D02-0E218A3FBF25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED09FBC5-3BD5-4A59-8D02-0E218A3FBF25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED09FBC5-3BD5-4A59-8D02-0E218A3FBF25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED09FBC5-3BD5-4A59-8D02-0E218A3FBF25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E666C15-000E-42BC-8E21-003B8BEAE098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E666C15-000E-42BC-8E21-003B8BEAE098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E666C15-000E-42BC-8E21-003B8BEAE098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E666C15-000E-42BC-8E21-003B8BEAE098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A163ED12-1465-41CF-836C-EF8061A47376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A163ED12-1465-41CF-836C-EF8061A47376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A163ED12-1465-41CF-836C-EF8061A47376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A163ED12-1465-41CF-836C-EF8061A47376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB8D887-B107-4540-94E5-2D4057A34B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB8D887-B107-4540-94E5-2D4057A34B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB8D887-B107-4540-94E5-2D4057A34B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB8D887-B107-4540-94E5-2D4057A34B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACBD5579-A7C4-4A07-9E20-4C1945F6F28A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACBD5579-A7C4-4A07-9E20-4C1945F6F28A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACBD5579-A7C4-4A07-9E20-4C1945F6F28A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACBD5579-A7C4-4A07-9E20-4C1945F6F28A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B5B1CCA-895F-43BD-963B-9B4FDE0017D5} = {7A01F7AF-8B7C-4869-B540-248C5C22A58E}
+		{8BE63C7E-D9B5-4DFC-B808-97A64962E594} = {7A01F7AF-8B7C-4869-B540-248C5C22A58E}
+		{ED8EF0CD-FD49-4B7C-B230-5DA3BAE68BDA} = {7A01F7AF-8B7C-4869-B540-248C5C22A58E}
+		{FCE5F2CE-C1E0-4105-9DDC-B52F39F99E65} = {7A01F7AF-8B7C-4869-B540-248C5C22A58E}
+		{B0053610-3688-4A42-883B-BF9ACE7FEEF2} = {7A01F7AF-8B7C-4869-B540-248C5C22A58E}
+		{C6B023B3-CF46-42A4-ADE9-BA0CC7853892} = {B0053610-3688-4A42-883B-BF9ACE7FEEF2}
+		{ED09FBC5-3BD5-4A59-8D02-0E218A3FBF25} = {8BE63C7E-D9B5-4DFC-B808-97A64962E594}
+		{7E666C15-000E-42BC-8E21-003B8BEAE098} = {FCE5F2CE-C1E0-4105-9DDC-B52F39F99E65}
+		{A163ED12-1465-41CF-836C-EF8061A47376} = {ED8EF0CD-FD49-4B7C-B230-5DA3BAE68BDA}
+		{9BB8D887-B107-4540-94E5-2D4057A34B63} = {6B5B1CCA-895F-43BD-963B-9B4FDE0017D5}
+		{ACBD5579-A7C4-4A07-9E20-4C1945F6F28A} = {2EDAB6D7-438A-48BC-983E-96C699F7D74A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9594B8E-F12B-47F7-8F4D-7F5562B330D7}
+	EndGlobalSection
+EndGlobal

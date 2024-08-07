@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Onur Kalender",
+  "classifications": [ "Web", "API", "Clean Architecture", "JWT", "Postgresql" ],
+  "identity": "EndoplasmCleanArchitecture",
+  "name": "Clean Architecture Web API Template",
+  "shortName": "cleanarch",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "EndoplasmCleanArchitecture",
+  "preferNameDirectory": true,
+  "symbols": {
+    "SolutionName": {
+      "type": "parameter",
+      "defaultValue": "EndoplasmCleanArchitecture",
+      "replaces": "EndoplasmCleanArchitecture"
+    }
+  }
+}
