@@ -22,6 +22,7 @@ namespace EndoplasmCleanArchitecture.Presistence
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.RegisterRepositories();
 
+            
             return services;
         }
         private static void RegisterRepositories(this IServiceCollection services)

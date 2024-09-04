@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EndoplasmCleanArchitecture.Application\EndoplasmCleanArchitecture.Application.csproj" />
+    <ProjectReference Include="..\EndoplasmCleanArchitecture.Authentication\EndoplasmCleanArchitecture.Authentication.csproj" />
   </ItemGroup>
 
   <ItemGroup>
