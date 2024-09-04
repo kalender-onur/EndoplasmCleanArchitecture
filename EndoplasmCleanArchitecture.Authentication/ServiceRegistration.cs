@@ -1,5 +1,5 @@
-﻿using EndoplasmCleanArchitecture.Authentication.AuthService;
-using EndoplasmCleanArchitecture.Authentication.Interfaces;
+﻿using EndoplasmCleanArchitecture.Authentication.Interfaces;
+using EndoplasmCleanArchitecture.Authentication.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -17,7 +17,8 @@ namespace EndoplasmCleanArchitecture.Authentication
 
             services.AddScoped<IAppUserService, AppUserService>();
             services.AddScoped<ITokenService, TokenService>();
-
+            services.AddDataProtection();
+            services.AddScoped<IProtectionService, ProtectionService>();
         }
     }
 }

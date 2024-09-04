@@ -30,7 +30,12 @@ namespace EndoplasmCleanArchitecture.Presistence.Context
 
             //Seed some dummy data
             modelBuilder.Entity<User>().HasData(
-                new User { Id = 1, UserName = "admin", Password = "123" });
+                new User
+                {
+                    Id = 1,
+                    UserName = "admin",
+                    Password = "CfDJ8JvYfu6DtutMuOjp1Y0RCiPMgsJy9qEPnHwuQcrs49bpvitA_Xhq0-VU0v-aPmpkZmFl008B9ZxfIarGJ0YohG6HyDiRQKK5wUbKKWN1HADS4Pz3_eUI-fV2GPBEBa90Mw"
+                });
         }
 
     }

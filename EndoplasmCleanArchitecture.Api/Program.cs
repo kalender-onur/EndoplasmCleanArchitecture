@@ -14,6 +14,13 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(p => p.AddPolicy("cors", builder =>
+{
+    builder.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+
+}));
 
 
 ConfigurationManager configuration = builder.Configuration;
@@ -92,6 +99,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseCors("cors");
 
 app.UseMiddleware<ExceptionMiddleware>();
 

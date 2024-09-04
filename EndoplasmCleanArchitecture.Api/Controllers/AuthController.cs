@@ -5,6 +5,7 @@ using EndoplasmCleanArchitecture.Api.DTOs.Account;
 using EndoplasmCleanArchitecture.Authentication.Interfaces;
 using EndoplasmCleanArchitecture.Authentication.Models;
 using EndoplasmCleanArchitecture.Application.Interfaces.User;
+using EndoplasmCleanArchitecture.Domain.Entities;
 
 namespace EndoplasmCleanArchitecture.Api.Controllers
 {
@@ -21,18 +22,18 @@ namespace EndoplasmCleanArchitecture.Api.Controllers
             _appUserService = appUserService;
             _tokenService = tokenService;
         }
-
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
+            var result = await _appUserService.Authenticate(request.Username, request.Password);
+            if (result != null && result.isSuccess && result.data != null)
+            {
+                var token = await _tokenService.GenerateToken(result.data);
+                return Ok(Response<TokenResult>.SuccessResponse(token));
+            }
 
-            var user = await _appUserService.Authenticate(request.Username, request.Password);
-            if (user == null)
-                return Unauthorized(Response<string>.ErrorResponse("Unauthorized", 401));
+            return Unauthorized(Response<string>.ErrorResponse(result?.errorMessage ?? "Unauthorized", 401));
 
-            var token = await _tokenService.GenerateToken(user);
-
-            return Ok(Response<TokenResult>.SuccessResponse(token));
         }
 
         [HttpPost("refreshToken")]

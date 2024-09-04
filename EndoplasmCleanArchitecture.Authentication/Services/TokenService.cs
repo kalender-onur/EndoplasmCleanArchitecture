@@ -1,13 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using EndoplasmCleanArchitecture.Authentication.AuthService;
 using EndoplasmCleanArchitecture.Authentication.Interfaces;
 using EndoplasmCleanArchitecture.Authentication.Models;
 using EndoplasmCleanArchitecture.Domain.Entities;
 using System.IdentityModel.Tokens.Jwt;
-using System.Reflection;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
